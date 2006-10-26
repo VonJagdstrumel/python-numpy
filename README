@@ -14,14 +14,14 @@ to your Python code that used Numeric to make it work with the new
 NumPy.
 
 Runtime requirements:
-  cygwin-1.5.21-1
+  cygwin-1.5.21-2
   lapack-3.0-5
   python-2.4.3-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.21-1
-  binutils-20060709-1
+  cygwin-1.5.21-2
+  binutils-20060817-1
   cygport-0.2.5-1
   gcc-core-3.4.4-1
   python-2.4.3-1
@@ -35,15 +35,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack numpy-0.9.6-X-src.tar.bz2
+  unpack numpy-1.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./numpy-0.9.6-X.cygport all
+  cygport ./numpy-1.0-X.cygport all
 
 This will create:
-  /usr/src/numpy-0.9.6-X-src.tar.bz2
-  /usr/src/numpy-0.9.6-X.tar.bz2
+  /usr/src/numpy-1.0-X-src.tar.bz2
+  /usr/src/numpy-1.0-X.tar.bz2
 
 -------------------------------------------
 
@@ -801,14 +801,17 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/numpy/version.py
   /usr/lib/python2.4/site-packages/numpy/version.pyc
   /usr/lib/python2.4/site-packages/numpy/version.pyo
-  /usr/share/doc/Cygwin/numpy-1.0b2.README
-  /usr/share/doc/numpy-1.0b2/LICENSE.txt
-  /usr/share/doc/numpy-1.0b2/README.txt
-  /usr/share/doc/numpy-1.0b2/THANKS.txt
+  /usr/share/doc/Cygwin/numpy-1.0.README
+  /usr/share/doc/numpy-1.0/LICENSE.txt
+  /usr/share/doc/numpy-1.0/README.txt
+  /usr/share/doc/numpy-1.0/THANKS.txt
 
 ------------------
 
 Port Notes:
+
+----- version 1.0-1 -----
+Version bump.
 
 ----- version 1.0b2-1 -----
 Version bump.
