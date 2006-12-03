@@ -14,15 +14,15 @@ to your Python code that used Numeric to make it work with the new
 NumPy.
 
 Runtime requirements:
-  cygwin-1.5.21-2
+  cygwin-1.5.22-1
   lapack-3.0-5
   python-2.4.3-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.21-2
+  cygwin-1.5.22-1
   binutils-20060817-1
-  cygport-0.2.5-1
+  cygport-0.2.6-1
   gcc-core-3.4.4-1
   python-2.4.3-1
 
@@ -35,15 +35,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack numpy-1.0-X-src.tar.bz2
+  unpack numpy-1.0.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./numpy-1.0-X.cygport all
+  cygport ./numpy-1.0.1-X.cygport all
 
 This will create:
-  /usr/src/numpy-1.0-X-src.tar.bz2
-  /usr/src/numpy-1.0-X.tar.bz2
+  /usr/src/numpy-1.0.1-X-src.tar.bz2
+  /usr/src/numpy-1.0.1-X.tar.bz2
 
 -------------------------------------------
 
@@ -101,7 +101,9 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/numpy/core/include/numpy/fenv/fenv.c
   /usr/lib/python2.4/site-packages/numpy/core/include/numpy/fenv/fenv.h
   /usr/lib/python2.4/site-packages/numpy/core/include/numpy/multiarray_api.txt
+  /usr/lib/python2.4/site-packages/numpy/core/include/numpy/ndarrayobject.h
   /usr/lib/python2.4/site-packages/numpy/core/include/numpy/noprefix.h
+  /usr/lib/python2.4/site-packages/numpy/core/include/numpy/npy_interrupt.h
   /usr/lib/python2.4/site-packages/numpy/core/include/numpy/old_defines.h
   /usr/lib/python2.4/site-packages/numpy/core/include/numpy/oldnumeric.h
   /usr/lib/python2.4/site-packages/numpy/core/include/numpy/ufunc_api.txt
@@ -132,12 +134,17 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/numpy/core/tests/test_defmatrix.py
   /usr/lib/python2.4/site-packages/numpy/core/tests/test_defmatrix.pyc
   /usr/lib/python2.4/site-packages/numpy/core/tests/test_defmatrix.pyo
+  /usr/lib/python2.4/site-packages/numpy/core/tests/test_errstate.py
+  /usr/lib/python2.4/site-packages/numpy/core/tests/test_errstate.pyc
+  /usr/lib/python2.4/site-packages/numpy/core/tests/test_errstate.pyo
+  /usr/lib/python2.4/site-packages/numpy/core/tests/test_ma.orig
   /usr/lib/python2.4/site-packages/numpy/core/tests/test_ma.py
   /usr/lib/python2.4/site-packages/numpy/core/tests/test_ma.pyc
   /usr/lib/python2.4/site-packages/numpy/core/tests/test_ma.pyo
   /usr/lib/python2.4/site-packages/numpy/core/tests/test_multiarray.py
   /usr/lib/python2.4/site-packages/numpy/core/tests/test_multiarray.pyc
   /usr/lib/python2.4/site-packages/numpy/core/tests/test_multiarray.pyo
+  /usr/lib/python2.4/site-packages/numpy/core/tests/test_numeric.orig
   /usr/lib/python2.4/site-packages/numpy/core/tests/test_numeric.py
   /usr/lib/python2.4/site-packages/numpy/core/tests/test_numeric.pyc
   /usr/lib/python2.4/site-packages/numpy/core/tests/test_numeric.pyo
@@ -150,6 +157,9 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/numpy/core/tests/test_regression.py
   /usr/lib/python2.4/site-packages/numpy/core/tests/test_regression.pyc
   /usr/lib/python2.4/site-packages/numpy/core/tests/test_regression.pyo
+  /usr/lib/python2.4/site-packages/numpy/core/tests/test_reshape.py
+  /usr/lib/python2.4/site-packages/numpy/core/tests/test_reshape.pyc
+  /usr/lib/python2.4/site-packages/numpy/core/tests/test_reshape.pyo
   /usr/lib/python2.4/site-packages/numpy/core/tests/test_scalarmath.py
   /usr/lib/python2.4/site-packages/numpy/core/tests/test_scalarmath.pyc
   /usr/lib/python2.4/site-packages/numpy/core/tests/test_scalarmath.pyo
@@ -161,9 +171,9 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/numpy/core/tests/test_unicode.pyo
   /usr/lib/python2.4/site-packages/numpy/core/tests/testdata.fits
   /usr/lib/python2.4/site-packages/numpy/core/umath.dll
-  /usr/lib/python2.4/site-packages/numpy/dft/__init__.py
-  /usr/lib/python2.4/site-packages/numpy/dft/__init__.pyc
-  /usr/lib/python2.4/site-packages/numpy/dft/__init__.pyo
+  /usr/lib/python2.4/site-packages/numpy/ctypeslib.py
+  /usr/lib/python2.4/site-packages/numpy/ctypeslib.pyc
+  /usr/lib/python2.4/site-packages/numpy/ctypeslib.pyo
   /usr/lib/python2.4/site-packages/numpy/distutils/__config__.py
   /usr/lib/python2.4/site-packages/numpy/distutils/__config__.pyc
   /usr/lib/python2.4/site-packages/numpy/distutils/__config__.pyo
@@ -311,6 +321,7 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/numpy/distutils/setup.py
   /usr/lib/python2.4/site-packages/numpy/distutils/setup.pyc
   /usr/lib/python2.4/site-packages/numpy/distutils/setup.pyo
+  /usr/lib/python2.4/site-packages/numpy/distutils/site.cfg
   /usr/lib/python2.4/site-packages/numpy/distutils/system_info.py
   /usr/lib/python2.4/site-packages/numpy/distutils/system_info.pyc
   /usr/lib/python2.4/site-packages/numpy/distutils/system_info.pyo
@@ -513,6 +524,97 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/numpy/f2py/info.py
   /usr/lib/python2.4/site-packages/numpy/f2py/info.pyc
   /usr/lib/python2.4/site-packages/numpy/f2py/info.pyo
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/DEV_README.txt
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/LICENSE.txt
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/README.txt
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/THANKS.txt
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/__init__.py
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/__init__.pyc
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/__init__.pyo
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/api.py
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/api.pyc
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/api.pyo
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/main.py
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/main.pyc
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/main.pyo
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/parser/Fortran2003.py
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/parser/Fortran2003.pyc
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/parser/Fortran2003.pyo
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/parser/__init__.py
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/parser/__init__.pyc
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/parser/__init__.pyo
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/parser/api.py
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/parser/api.pyc
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/parser/api.pyo
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/parser/base_classes.py
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/parser/base_classes.pyc
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/parser/base_classes.pyo
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/parser/block_statements.py
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/parser/block_statements.pyc
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/parser/block_statements.pyo
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/parser/doc.txt
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/parser/parsefortran.py
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/parser/parsefortran.pyc
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/parser/parsefortran.pyo
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/parser/pattern_tools.py
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/parser/pattern_tools.pyc
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/parser/pattern_tools.pyo
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/parser/readfortran.py
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/parser/readfortran.pyc
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/parser/readfortran.pyo
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/parser/sourceinfo.py
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/parser/sourceinfo.pyc
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/parser/sourceinfo.pyo
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/parser/splitline.py
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/parser/splitline.pyc
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/parser/splitline.pyo
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/parser/statements.py
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/parser/statements.pyc
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/parser/statements.pyo
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/parser/test_Fortran2003.py
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/parser/test_Fortran2003.pyc
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/parser/test_Fortran2003.pyo
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/parser/test_parser.py
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/parser/test_parser.pyc
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/parser/test_parser.pyo
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/parser/typedecl_statements.py
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/parser/typedecl_statements.pyc
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/parser/typedecl_statements.pyo
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/parser/utils.py
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/parser/utils.pyc
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/parser/utils.pyo
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/py_wrap.py
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/py_wrap.pyc
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/py_wrap.pyo
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/py_wrap_subprogram.py
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/py_wrap_subprogram.pyc
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/py_wrap_subprogram.pyo
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/py_wrap_type.py
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/py_wrap_type.pyc
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/py_wrap_type.pyo
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/setup.py
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/setup.pyc
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/setup.pyo
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/src/F_FUNC.cpp
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/src/pyobj_to_string_len.c
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/test_derived_scalar.py
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/test_derived_scalar.pyc
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/test_derived_scalar.pyo
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/test_module_module.py
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/test_module_module.pyc
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/test_module_module.pyo
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/test_module_scalar.py
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/test_module_scalar.pyc
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/test_module_scalar.pyo
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/test_scalar_function_in.py
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/test_scalar_function_in.pyc
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/test_scalar_function_in.pyo
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/test_scalar_in_out.py
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/test_scalar_in_out.pyc
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/test_scalar_in_out.pyo
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/wrapper_base.py
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/wrapper_base.pyc
+  /usr/lib/python2.4/site-packages/numpy/f2py/lib/wrapper_base.pyo
   /usr/lib/python2.4/site-packages/numpy/f2py/rules.py
   /usr/lib/python2.4/site-packages/numpy/f2py/rules.pyc
   /usr/lib/python2.4/site-packages/numpy/f2py/rules.pyo
@@ -540,12 +642,12 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/numpy/fft/setup.py
   /usr/lib/python2.4/site-packages/numpy/fft/setup.pyc
   /usr/lib/python2.4/site-packages/numpy/fft/setup.pyo
+  /usr/lib/python2.4/site-packages/numpy/fft/tests/test_fftpack.py
+  /usr/lib/python2.4/site-packages/numpy/fft/tests/test_fftpack.pyc
+  /usr/lib/python2.4/site-packages/numpy/fft/tests/test_fftpack.pyo
   /usr/lib/python2.4/site-packages/numpy/fft/tests/test_helper.py
   /usr/lib/python2.4/site-packages/numpy/fft/tests/test_helper.pyc
   /usr/lib/python2.4/site-packages/numpy/fft/tests/test_helper.pyo
-  /usr/lib/python2.4/site-packages/numpy/lib/UserArray.py
-  /usr/lib/python2.4/site-packages/numpy/lib/UserArray.pyc
-  /usr/lib/python2.4/site-packages/numpy/lib/UserArray.pyo
   /usr/lib/python2.4/site-packages/numpy/lib/__init__.py
   /usr/lib/python2.4/site-packages/numpy/lib/__init__.pyc
   /usr/lib/python2.4/site-packages/numpy/lib/__init__.pyo
@@ -586,6 +688,7 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/numpy/lib/tests/test_arraysetops.py
   /usr/lib/python2.4/site-packages/numpy/lib/tests/test_arraysetops.pyc
   /usr/lib/python2.4/site-packages/numpy/lib/tests/test_arraysetops.pyo
+  /usr/lib/python2.4/site-packages/numpy/lib/tests/test_function_base.orig
   /usr/lib/python2.4/site-packages/numpy/lib/tests/test_function_base.py
   /usr/lib/python2.4/site-packages/numpy/lib/tests/test_function_base.pyc
   /usr/lib/python2.4/site-packages/numpy/lib/tests/test_function_base.pyo
@@ -604,6 +707,7 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/numpy/lib/tests/test_twodim_base.py
   /usr/lib/python2.4/site-packages/numpy/lib/tests/test_twodim_base.pyc
   /usr/lib/python2.4/site-packages/numpy/lib/tests/test_twodim_base.pyo
+  /usr/lib/python2.4/site-packages/numpy/lib/tests/test_type_check.orig
   /usr/lib/python2.4/site-packages/numpy/lib/tests/test_type_check.py
   /usr/lib/python2.4/site-packages/numpy/lib/tests/test_type_check.pyc
   /usr/lib/python2.4/site-packages/numpy/lib/tests/test_type_check.pyo
@@ -726,6 +830,9 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/numpy/oldnumeric/fft.py
   /usr/lib/python2.4/site-packages/numpy/oldnumeric/fft.pyc
   /usr/lib/python2.4/site-packages/numpy/oldnumeric/fft.pyo
+  /usr/lib/python2.4/site-packages/numpy/oldnumeric/fix_default_axis.py
+  /usr/lib/python2.4/site-packages/numpy/oldnumeric/fix_default_axis.pyc
+  /usr/lib/python2.4/site-packages/numpy/oldnumeric/fix_default_axis.pyo
   /usr/lib/python2.4/site-packages/numpy/oldnumeric/functions.py
   /usr/lib/python2.4/site-packages/numpy/oldnumeric/functions.pyc
   /usr/lib/python2.4/site-packages/numpy/oldnumeric/functions.pyo
@@ -798,17 +905,23 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/numpy/testing/utils.py
   /usr/lib/python2.4/site-packages/numpy/testing/utils.pyc
   /usr/lib/python2.4/site-packages/numpy/testing/utils.pyo
+  /usr/lib/python2.4/site-packages/numpy/tests/test_ctypeslib.py
+  /usr/lib/python2.4/site-packages/numpy/tests/test_ctypeslib.pyc
+  /usr/lib/python2.4/site-packages/numpy/tests/test_ctypeslib.pyo
   /usr/lib/python2.4/site-packages/numpy/version.py
   /usr/lib/python2.4/site-packages/numpy/version.pyc
   /usr/lib/python2.4/site-packages/numpy/version.pyo
-  /usr/share/doc/Cygwin/numpy-1.0.README
-  /usr/share/doc/numpy-1.0/LICENSE.txt
-  /usr/share/doc/numpy-1.0/README.txt
-  /usr/share/doc/numpy-1.0/THANKS.txt
+  /usr/share/doc/Cygwin/numpy-1.0.1.README
+  /usr/share/doc/numpy-1.0.1/LICENSE.txt
+  /usr/share/doc/numpy-1.0.1/README.txt
+  /usr/share/doc/numpy-1.0.1/THANKS.txt
 
 ------------------
 
 Port Notes:
+
+----- version 1.0.1-1 -----
+Version bump.
 
 ----- version 1.0-1 -----
 Version bump.
