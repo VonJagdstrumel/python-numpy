@@ -36,25 +36,23 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack python-numpy-1.0.2-X-src.tar.bz2
+  unpack python-numpy-1.0.3-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./python-numpy-1.0.2-X.cygport all
+  cygport ./python-numpy-1.0.3-X.cygport all
 
 This will create:
-  /usr/src/python-numpy-1.0.2-X-src.tar.bz2
-  /usr/src/python-numpy-1.0.2-X.tar.bz2
+  /usr/src/python-numpy-1.0.3-X-src.tar.bz2
+  /usr/src/python-numpy-1.0.3-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
   /usr/bin/f2py
-  /usr/lib/python2.5/site-packages/numpy-1.0.2-py2.5.egg-info
-  /usr/lib/python2.5/site-packages/numpy/COMPATIBILITY
+  /usr/lib/python2.5/site-packages/numpy-1.0.3-py2.5.egg-info
   /usr/lib/python2.5/site-packages/numpy/DEV_README.txt
-  /usr/lib/python2.5/site-packages/numpy/DOCSTRING_README.txt
   /usr/lib/python2.5/site-packages/numpy/LICENSE.txt
   /usr/lib/python2.5/site-packages/numpy/README.txt
   /usr/lib/python2.5/site-packages/numpy/THANKS.txt
@@ -140,12 +138,14 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/numpy/core/tests/test_errstate.py
   /usr/lib/python2.5/site-packages/numpy/core/tests/test_errstate.pyc
   /usr/lib/python2.5/site-packages/numpy/core/tests/test_errstate.pyo
+  /usr/lib/python2.5/site-packages/numpy/core/tests/test_ma.orig
   /usr/lib/python2.5/site-packages/numpy/core/tests/test_ma.py
   /usr/lib/python2.5/site-packages/numpy/core/tests/test_ma.pyc
   /usr/lib/python2.5/site-packages/numpy/core/tests/test_ma.pyo
   /usr/lib/python2.5/site-packages/numpy/core/tests/test_multiarray.py
   /usr/lib/python2.5/site-packages/numpy/core/tests/test_multiarray.pyc
   /usr/lib/python2.5/site-packages/numpy/core/tests/test_multiarray.pyo
+  /usr/lib/python2.5/site-packages/numpy/core/tests/test_numeric.orig
   /usr/lib/python2.5/site-packages/numpy/core/tests/test_numeric.py
   /usr/lib/python2.5/site-packages/numpy/core/tests/test_numeric.pyc
   /usr/lib/python2.5/site-packages/numpy/core/tests/test_numeric.pyo
@@ -158,6 +158,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/numpy/core/tests/test_regression.py
   /usr/lib/python2.5/site-packages/numpy/core/tests/test_regression.pyc
   /usr/lib/python2.5/site-packages/numpy/core/tests/test_regression.pyo
+  /usr/lib/python2.5/site-packages/numpy/core/tests/test_reshape.py
+  /usr/lib/python2.5/site-packages/numpy/core/tests/test_reshape.pyc
+  /usr/lib/python2.5/site-packages/numpy/core/tests/test_reshape.pyo
   /usr/lib/python2.5/site-packages/numpy/core/tests/test_scalarmath.py
   /usr/lib/python2.5/site-packages/numpy/core/tests/test_scalarmath.pyc
   /usr/lib/python2.5/site-packages/numpy/core/tests/test_scalarmath.pyo
@@ -319,6 +322,7 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/numpy/distutils/setup.py
   /usr/lib/python2.5/site-packages/numpy/distutils/setup.pyc
   /usr/lib/python2.5/site-packages/numpy/distutils/setup.pyo
+  /usr/lib/python2.5/site-packages/numpy/distutils/site.cfg
   /usr/lib/python2.5/site-packages/numpy/distutils/system_info.py
   /usr/lib/python2.5/site-packages/numpy/distutils/system_info.pyc
   /usr/lib/python2.5/site-packages/numpy/distutils/system_info.pyo
@@ -383,6 +387,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/numpy/distutils/tests/swig_ext/tests/test_example2.py
   /usr/lib/python2.5/site-packages/numpy/distutils/tests/swig_ext/tests/test_example2.pyc
   /usr/lib/python2.5/site-packages/numpy/distutils/tests/swig_ext/tests/test_example2.pyo
+  /usr/lib/python2.5/site-packages/numpy/distutils/tests/test_fcompiler_gnu.py
+  /usr/lib/python2.5/site-packages/numpy/distutils/tests/test_fcompiler_gnu.pyc
+  /usr/lib/python2.5/site-packages/numpy/distutils/tests/test_fcompiler_gnu.pyo
   /usr/lib/python2.5/site-packages/numpy/distutils/tests/test_misc_util.py
   /usr/lib/python2.5/site-packages/numpy/distutils/tests/test_misc_util.pyc
   /usr/lib/python2.5/site-packages/numpy/distutils/tests/test_misc_util.pyo
@@ -408,24 +415,36 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/numpy/doc/pyrex/setup.pyc
   /usr/lib/python2.5/site-packages/numpy/doc/pyrex/setup.pyo
   /usr/lib/python2.5/site-packages/numpy/doc/records.txt
-  /usr/lib/python2.5/site-packages/numpy/doc/simple.py
-  /usr/lib/python2.5/site-packages/numpy/doc/simple.pyc
-  /usr/lib/python2.5/site-packages/numpy/doc/simple.pyo
   /usr/lib/python2.5/site-packages/numpy/doc/swig/Makefile
+  /usr/lib/python2.5/site-packages/numpy/doc/swig/Matrix.cxx
+  /usr/lib/python2.5/site-packages/numpy/doc/swig/Matrix.h
+  /usr/lib/python2.5/site-packages/numpy/doc/swig/Matrix.i
   /usr/lib/python2.5/site-packages/numpy/doc/swig/README
-  /usr/lib/python2.5/site-packages/numpy/doc/swig/Series.i
+  /usr/lib/python2.5/site-packages/numpy/doc/swig/Tensor.cxx
+  /usr/lib/python2.5/site-packages/numpy/doc/swig/Tensor.h
+  /usr/lib/python2.5/site-packages/numpy/doc/swig/Tensor.i
+  /usr/lib/python2.5/site-packages/numpy/doc/swig/Vector.cxx
+  /usr/lib/python2.5/site-packages/numpy/doc/swig/Vector.h
+  /usr/lib/python2.5/site-packages/numpy/doc/swig/Vector.i
   /usr/lib/python2.5/site-packages/numpy/doc/swig/numpy.i
   /usr/lib/python2.5/site-packages/numpy/doc/swig/numpy_swig.html
   /usr/lib/python2.5/site-packages/numpy/doc/swig/numpy_swig.pdf
   /usr/lib/python2.5/site-packages/numpy/doc/swig/numpy_swig.txt
-  /usr/lib/python2.5/site-packages/numpy/doc/swig/series.cxx
-  /usr/lib/python2.5/site-packages/numpy/doc/swig/series.h
   /usr/lib/python2.5/site-packages/numpy/doc/swig/setup.py
   /usr/lib/python2.5/site-packages/numpy/doc/swig/setup.pyc
   /usr/lib/python2.5/site-packages/numpy/doc/swig/setup.pyo
-  /usr/lib/python2.5/site-packages/numpy/doc/swig/testSeries.py
-  /usr/lib/python2.5/site-packages/numpy/doc/swig/testSeries.pyc
-  /usr/lib/python2.5/site-packages/numpy/doc/swig/testSeries.pyo
+  /usr/lib/python2.5/site-packages/numpy/doc/swig/testMatrix.py
+  /usr/lib/python2.5/site-packages/numpy/doc/swig/testMatrix.pyc
+  /usr/lib/python2.5/site-packages/numpy/doc/swig/testMatrix.pyo
+  /usr/lib/python2.5/site-packages/numpy/doc/swig/testTensor.py
+  /usr/lib/python2.5/site-packages/numpy/doc/swig/testTensor.pyc
+  /usr/lib/python2.5/site-packages/numpy/doc/swig/testTensor.pyo
+  /usr/lib/python2.5/site-packages/numpy/doc/swig/testVector.py
+  /usr/lib/python2.5/site-packages/numpy/doc/swig/testVector.pyc
+  /usr/lib/python2.5/site-packages/numpy/doc/swig/testVector.pyo
+  /usr/lib/python2.5/site-packages/numpy/doc/swig/testing.html
+  /usr/lib/python2.5/site-packages/numpy/doc/swig/testing.pdf
+  /usr/lib/python2.5/site-packages/numpy/doc/swig/testing.txt
   /usr/lib/python2.5/site-packages/numpy/doc/ufuncs.txt
   /usr/lib/python2.5/site-packages/numpy/dual.py
   /usr/lib/python2.5/site-packages/numpy/dual.pyc
@@ -529,7 +548,6 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/numpy/f2py/info.pyc
   /usr/lib/python2.5/site-packages/numpy/f2py/info.pyo
   /usr/lib/python2.5/site-packages/numpy/f2py/lib/DEV_README.txt
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/DOCSTRING_README.txt
   /usr/lib/python2.5/site-packages/numpy/f2py/lib/LICENSE.txt
   /usr/lib/python2.5/site-packages/numpy/f2py/lib/README.txt
   /usr/lib/python2.5/site-packages/numpy/f2py/lib/THANKS.txt
@@ -542,6 +560,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/numpy/f2py/lib/main.py
   /usr/lib/python2.5/site-packages/numpy/f2py/lib/main.pyc
   /usr/lib/python2.5/site-packages/numpy/f2py/lib/main.pyo
+  /usr/lib/python2.5/site-packages/numpy/f2py/lib/nary.py
+  /usr/lib/python2.5/site-packages/numpy/f2py/lib/nary.pyc
+  /usr/lib/python2.5/site-packages/numpy/f2py/lib/nary.pyo
   /usr/lib/python2.5/site-packages/numpy/f2py/lib/parser/Fortran2003.py
   /usr/lib/python2.5/site-packages/numpy/f2py/lib/parser/Fortran2003.pyc
   /usr/lib/python2.5/site-packages/numpy/f2py/lib/parser/Fortran2003.pyo
@@ -602,21 +623,6 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/numpy/f2py/lib/setup.pyo
   /usr/lib/python2.5/site-packages/numpy/f2py/lib/src/F_FUNC.cpp
   /usr/lib/python2.5/site-packages/numpy/f2py/lib/src/pyobj_to_string_len.c
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/test_derived_scalar.py
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/test_derived_scalar.pyc
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/test_derived_scalar.pyo
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/test_module_module.py
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/test_module_module.pyc
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/test_module_module.pyo
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/test_module_scalar.py
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/test_module_scalar.pyc
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/test_module_scalar.pyo
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/test_scalar_function_in.py
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/test_scalar_function_in.pyc
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/test_scalar_function_in.pyo
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/test_scalar_in_out.py
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/test_scalar_in_out.pyc
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/test_scalar_in_out.pyo
   /usr/lib/python2.5/site-packages/numpy/f2py/lib/wrapper_base.py
   /usr/lib/python2.5/site-packages/numpy/f2py/lib/wrapper_base.pyc
   /usr/lib/python2.5/site-packages/numpy/f2py/lib/wrapper_base.pyo
@@ -693,6 +699,7 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/numpy/lib/tests/test_arraysetops.py
   /usr/lib/python2.5/site-packages/numpy/lib/tests/test_arraysetops.pyc
   /usr/lib/python2.5/site-packages/numpy/lib/tests/test_arraysetops.pyo
+  /usr/lib/python2.5/site-packages/numpy/lib/tests/test_function_base.orig
   /usr/lib/python2.5/site-packages/numpy/lib/tests/test_function_base.py
   /usr/lib/python2.5/site-packages/numpy/lib/tests/test_function_base.pyc
   /usr/lib/python2.5/site-packages/numpy/lib/tests/test_function_base.pyo
@@ -711,6 +718,7 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/numpy/lib/tests/test_twodim_base.py
   /usr/lib/python2.5/site-packages/numpy/lib/tests/test_twodim_base.pyc
   /usr/lib/python2.5/site-packages/numpy/lib/tests/test_twodim_base.pyo
+  /usr/lib/python2.5/site-packages/numpy/lib/tests/test_type_check.orig
   /usr/lib/python2.5/site-packages/numpy/lib/tests/test_type_check.py
   /usr/lib/python2.5/site-packages/numpy/lib/tests/test_type_check.pyc
   /usr/lib/python2.5/site-packages/numpy/lib/tests/test_type_check.pyo
@@ -892,7 +900,6 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/numpy/random/setup.py
   /usr/lib/python2.5/site-packages/numpy/random/setup.pyc
   /usr/lib/python2.5/site-packages/numpy/random/setup.pyo
-  /usr/lib/python2.5/site-packages/numpy/scipy_compatibility
   /usr/lib/python2.5/site-packages/numpy/setup.py
   /usr/lib/python2.5/site-packages/numpy/setup.pyc
   /usr/lib/python2.5/site-packages/numpy/setup.pyo
@@ -917,14 +924,17 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/numpy/version.py
   /usr/lib/python2.5/site-packages/numpy/version.pyc
   /usr/lib/python2.5/site-packages/numpy/version.pyo
-  /usr/share/doc/Cygwin/python-numpy-1.0.2.README
-  /usr/share/doc/python-numpy-1.0.2/LICENSE.txt
-  /usr/share/doc/python-numpy-1.0.2/README.txt
-  /usr/share/doc/python-numpy-1.0.2/THANKS.txt
+  /usr/share/doc/Cygwin/python-numpy-1.0.3.README
+  /usr/share/doc/python-numpy-1.0.3/LICENSE.txt
+  /usr/share/doc/python-numpy-1.0.3/README.txt
+  /usr/share/doc/python-numpy-1.0.3/THANKS.txt
 
 ------------------
 
 Port Notes:
+
+----- version 1.0.3-1 -----
+Version bump.
 
 ----- version 1.0.2-1 -----
 Version bump, built for python-2.5.
