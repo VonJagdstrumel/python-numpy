@@ -1,0 +1,5 @@
+inherit distutils
+
+DESCRIPTION="Numeric Python module"
+HOMEPAGE="http://numeric.scipy.org/"
+SRC_URI="mirror://sourceforge/${ORIG_PN}/${ORIG_PN}-${PV}.tar.gz"
