@@ -1,0 +1,11 @@
+--- origsrc/numpy-1.0.4/numpy/distutils/fcompiler/gnu.py	2007-11-07 16:05:14.000000000 -0600
++++ src/numpy-1.0.4/numpy/distutils/fcompiler/gnu.py	2007-11-29 22:28:10.545000000 -0600
+@@ -51,7 +51,7 @@
+     possible_executables = ['g77', 'f77']
+     executables = {
+         'version_cmd'  : [None, "--version"],
+-        'compiler_f77' : [None, "-g", "-Wall", "-fno-second-underscore"],
++        'compiler_f77' : [None, "-g", "-Wall"],
+         'compiler_f90' : None, # Use --fcompiler=gnu95 for f90 codes
+         'compiler_fix' : None,
+         'linker_so'    : [None, "-g", "-Wall"],
