@@ -14,18 +14,17 @@ to your Python code that used Numeric to make it work with the new
 NumPy.
 
 Runtime requirements:
-  cygwin-1.5.25-7
+  cygwin-1.5.25-15
   lapack-3.0-5
-  python-2.5.1-3
+  python-2.5.2-3
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.25-7
-  binutils-20060817-1
-  cygport-0.3.8-1
+  binutils-20080624-2
+  cygport-0.4.0-1
   gcc-core-3.4.4-3
   gcc-g77-3.4.4-3
-  python-2.5.1-3
+  python-2.5.2-3
 
 Canonical website:
   http://numeric.scipy.org/
@@ -36,24 +35,25 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack python-numpy-1.0.4-X-src.tar.bz2
+  unpack python-numpy-1.2.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./python-numpy-1.0.4-X.cygport all
+  cygport ./python-numpy-1.2.0-X.cygport all
 
 This will create:
-  /usr/src/python-numpy-1.0.4-X-src.tar.bz2
-  /usr/src/python-numpy-1.0.4-X.tar.bz2
+  /usr/src/python-numpy-1.2.0-X-src.tar.bz2
+  /usr/src/python-numpy-1.2.0-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
   /usr/bin/f2py
-  /usr/lib/python2.5/site-packages/numpy-1.0.4-py2.5.egg-info
+  /usr/lib/python2.5/site-packages/numpy-1.2.0-py2.5.egg-info
   /usr/lib/python2.5/site-packages/numpy/COMPATIBILITY
   /usr/lib/python2.5/site-packages/numpy/DEV_README.txt
+  /usr/lib/python2.5/site-packages/numpy/INSTALL.txt
   /usr/lib/python2.5/site-packages/numpy/LICENSE.txt
   /usr/lib/python2.5/site-packages/numpy/README.txt
   /usr/lib/python2.5/site-packages/numpy/THANKS.txt
@@ -91,20 +91,20 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/numpy/core/fromnumeric.py
   /usr/lib/python2.5/site-packages/numpy/core/fromnumeric.pyc
   /usr/lib/python2.5/site-packages/numpy/core/fromnumeric.pyo
-  /usr/lib/python2.5/site-packages/numpy/core/generate_array_api.py
-  /usr/lib/python2.5/site-packages/numpy/core/generate_array_api.pyc
-  /usr/lib/python2.5/site-packages/numpy/core/generate_array_api.pyo
+  /usr/lib/python2.5/site-packages/numpy/core/generate_numpy_api.py
+  /usr/lib/python2.5/site-packages/numpy/core/generate_numpy_api.pyc
+  /usr/lib/python2.5/site-packages/numpy/core/generate_numpy_api.pyo
   /usr/lib/python2.5/site-packages/numpy/core/include/numpy/__multiarray_api.h
   /usr/lib/python2.5/site-packages/numpy/core/include/numpy/__ufunc_api.h
   /usr/lib/python2.5/site-packages/numpy/core/include/numpy/arrayobject.h
   /usr/lib/python2.5/site-packages/numpy/core/include/numpy/arrayscalars.h
-  /usr/lib/python2.5/site-packages/numpy/core/include/numpy/config.h
   /usr/lib/python2.5/site-packages/numpy/core/include/numpy/fenv/fenv.c
   /usr/lib/python2.5/site-packages/numpy/core/include/numpy/fenv/fenv.h
   /usr/lib/python2.5/site-packages/numpy/core/include/numpy/multiarray_api.txt
   /usr/lib/python2.5/site-packages/numpy/core/include/numpy/ndarrayobject.h
   /usr/lib/python2.5/site-packages/numpy/core/include/numpy/noprefix.h
   /usr/lib/python2.5/site-packages/numpy/core/include/numpy/npy_interrupt.h
+  /usr/lib/python2.5/site-packages/numpy/core/include/numpy/numpyconfig.h
   /usr/lib/python2.5/site-packages/numpy/core/include/numpy/old_defines.h
   /usr/lib/python2.5/site-packages/numpy/core/include/numpy/oldnumeric.h
   /usr/lib/python2.5/site-packages/numpy/core/include/numpy/ufunc_api.txt
@@ -112,9 +112,6 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/numpy/core/info.py
   /usr/lib/python2.5/site-packages/numpy/core/info.pyc
   /usr/lib/python2.5/site-packages/numpy/core/info.pyo
-  /usr/lib/python2.5/site-packages/numpy/core/ma.py
-  /usr/lib/python2.5/site-packages/numpy/core/ma.pyc
-  /usr/lib/python2.5/site-packages/numpy/core/ma.pyo
   /usr/lib/python2.5/site-packages/numpy/core/memmap.py
   /usr/lib/python2.5/site-packages/numpy/core/memmap.pyc
   /usr/lib/python2.5/site-packages/numpy/core/memmap.pyo
@@ -129,18 +126,32 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/numpy/core/records.pyc
   /usr/lib/python2.5/site-packages/numpy/core/records.pyo
   /usr/lib/python2.5/site-packages/numpy/core/scalarmath.dll
+  /usr/lib/python2.5/site-packages/numpy/core/scons_support.py
+  /usr/lib/python2.5/site-packages/numpy/core/scons_support.pyc
+  /usr/lib/python2.5/site-packages/numpy/core/scons_support.pyo
   /usr/lib/python2.5/site-packages/numpy/core/setup.py
   /usr/lib/python2.5/site-packages/numpy/core/setup.pyc
   /usr/lib/python2.5/site-packages/numpy/core/setup.pyo
+  /usr/lib/python2.5/site-packages/numpy/core/setupscons.py
+  /usr/lib/python2.5/site-packages/numpy/core/setupscons.pyc
+  /usr/lib/python2.5/site-packages/numpy/core/setupscons.pyo
+  /usr/lib/python2.5/site-packages/numpy/core/tests/data/astype_copy.pkl
+  /usr/lib/python2.5/site-packages/numpy/core/tests/data/recarray_from_file.fits
+  /usr/lib/python2.5/site-packages/numpy/core/tests/test_blasdot.py
+  /usr/lib/python2.5/site-packages/numpy/core/tests/test_blasdot.pyc
+  /usr/lib/python2.5/site-packages/numpy/core/tests/test_blasdot.pyo
+  /usr/lib/python2.5/site-packages/numpy/core/tests/test_defchararray.py
+  /usr/lib/python2.5/site-packages/numpy/core/tests/test_defchararray.pyc
+  /usr/lib/python2.5/site-packages/numpy/core/tests/test_defchararray.pyo
   /usr/lib/python2.5/site-packages/numpy/core/tests/test_defmatrix.py
   /usr/lib/python2.5/site-packages/numpy/core/tests/test_defmatrix.pyc
   /usr/lib/python2.5/site-packages/numpy/core/tests/test_defmatrix.pyo
   /usr/lib/python2.5/site-packages/numpy/core/tests/test_errstate.py
   /usr/lib/python2.5/site-packages/numpy/core/tests/test_errstate.pyc
   /usr/lib/python2.5/site-packages/numpy/core/tests/test_errstate.pyo
-  /usr/lib/python2.5/site-packages/numpy/core/tests/test_ma.py
-  /usr/lib/python2.5/site-packages/numpy/core/tests/test_ma.pyc
-  /usr/lib/python2.5/site-packages/numpy/core/tests/test_ma.pyo
+  /usr/lib/python2.5/site-packages/numpy/core/tests/test_memmap.py
+  /usr/lib/python2.5/site-packages/numpy/core/tests/test_memmap.pyc
+  /usr/lib/python2.5/site-packages/numpy/core/tests/test_memmap.pyo
   /usr/lib/python2.5/site-packages/numpy/core/tests/test_multiarray.py
   /usr/lib/python2.5/site-packages/numpy/core/tests/test_multiarray.pyc
   /usr/lib/python2.5/site-packages/numpy/core/tests/test_multiarray.pyo
@@ -150,6 +161,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/numpy/core/tests/test_numerictypes.py
   /usr/lib/python2.5/site-packages/numpy/core/tests/test_numerictypes.pyc
   /usr/lib/python2.5/site-packages/numpy/core/tests/test_numerictypes.pyo
+  /usr/lib/python2.5/site-packages/numpy/core/tests/test_print.py
+  /usr/lib/python2.5/site-packages/numpy/core/tests/test_print.pyc
+  /usr/lib/python2.5/site-packages/numpy/core/tests/test_print.pyo
   /usr/lib/python2.5/site-packages/numpy/core/tests/test_records.py
   /usr/lib/python2.5/site-packages/numpy/core/tests/test_records.pyc
   /usr/lib/python2.5/site-packages/numpy/core/tests/test_records.pyo
@@ -159,13 +173,15 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/numpy/core/tests/test_scalarmath.py
   /usr/lib/python2.5/site-packages/numpy/core/tests/test_scalarmath.pyc
   /usr/lib/python2.5/site-packages/numpy/core/tests/test_scalarmath.pyo
+  /usr/lib/python2.5/site-packages/numpy/core/tests/test_ufunc.py
+  /usr/lib/python2.5/site-packages/numpy/core/tests/test_ufunc.pyc
+  /usr/lib/python2.5/site-packages/numpy/core/tests/test_ufunc.pyo
   /usr/lib/python2.5/site-packages/numpy/core/tests/test_umath.py
   /usr/lib/python2.5/site-packages/numpy/core/tests/test_umath.pyc
   /usr/lib/python2.5/site-packages/numpy/core/tests/test_umath.pyo
   /usr/lib/python2.5/site-packages/numpy/core/tests/test_unicode.py
   /usr/lib/python2.5/site-packages/numpy/core/tests/test_unicode.pyc
   /usr/lib/python2.5/site-packages/numpy/core/tests/test_unicode.pyo
-  /usr/lib/python2.5/site-packages/numpy/core/tests/testdata.fits
   /usr/lib/python2.5/site-packages/numpy/core/umath.dll
   /usr/lib/python2.5/site-packages/numpy/ctypeslib.py
   /usr/lib/python2.5/site-packages/numpy/ctypeslib.pyc
@@ -212,6 +228,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/numpy/distutils/command/config_compiler.py
   /usr/lib/python2.5/site-packages/numpy/distutils/command/config_compiler.pyc
   /usr/lib/python2.5/site-packages/numpy/distutils/command/config_compiler.pyo
+  /usr/lib/python2.5/site-packages/numpy/distutils/command/develop.py
+  /usr/lib/python2.5/site-packages/numpy/distutils/command/develop.pyc
+  /usr/lib/python2.5/site-packages/numpy/distutils/command/develop.pyo
   /usr/lib/python2.5/site-packages/numpy/distutils/command/egg_info.py
   /usr/lib/python2.5/site-packages/numpy/distutils/command/egg_info.pyc
   /usr/lib/python2.5/site-packages/numpy/distutils/command/egg_info.pyo
@@ -224,6 +243,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/numpy/distutils/command/install_headers.py
   /usr/lib/python2.5/site-packages/numpy/distutils/command/install_headers.pyc
   /usr/lib/python2.5/site-packages/numpy/distutils/command/install_headers.pyo
+  /usr/lib/python2.5/site-packages/numpy/distutils/command/scons.py
+  /usr/lib/python2.5/site-packages/numpy/distutils/command/scons.pyc
+  /usr/lib/python2.5/site-packages/numpy/distutils/command/scons.pyo
   /usr/lib/python2.5/site-packages/numpy/distutils/command/sdist.py
   /usr/lib/python2.5/site-packages/numpy/distutils/command/sdist.pyc
   /usr/lib/python2.5/site-packages/numpy/distutils/command/sdist.pyo
@@ -317,9 +339,15 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/numpy/distutils/misc_util.py
   /usr/lib/python2.5/site-packages/numpy/distutils/misc_util.pyc
   /usr/lib/python2.5/site-packages/numpy/distutils/misc_util.pyo
+  /usr/lib/python2.5/site-packages/numpy/distutils/numpy_distribution.py
+  /usr/lib/python2.5/site-packages/numpy/distutils/numpy_distribution.pyc
+  /usr/lib/python2.5/site-packages/numpy/distutils/numpy_distribution.pyo
   /usr/lib/python2.5/site-packages/numpy/distutils/setup.py
   /usr/lib/python2.5/site-packages/numpy/distutils/setup.pyc
   /usr/lib/python2.5/site-packages/numpy/distutils/setup.pyo
+  /usr/lib/python2.5/site-packages/numpy/distutils/setupscons.py
+  /usr/lib/python2.5/site-packages/numpy/distutils/setupscons.pyc
+  /usr/lib/python2.5/site-packages/numpy/distutils/setupscons.pyo
   /usr/lib/python2.5/site-packages/numpy/distutils/system_info.py
   /usr/lib/python2.5/site-packages/numpy/distutils/system_info.pyc
   /usr/lib/python2.5/site-packages/numpy/distutils/system_info.pyo
@@ -393,76 +421,54 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/numpy/distutils/unixccompiler.py
   /usr/lib/python2.5/site-packages/numpy/distutils/unixccompiler.pyc
   /usr/lib/python2.5/site-packages/numpy/distutils/unixccompiler.pyo
-  /usr/lib/python2.5/site-packages/numpy/doc/CAPI.txt
-  /usr/lib/python2.5/site-packages/numpy/doc/DISTUTILS.txt
-  /usr/lib/python2.5/site-packages/numpy/doc/HOWTO_DOCUMENT.txt
-  /usr/lib/python2.5/site-packages/numpy/doc/README.txt
-  /usr/lib/python2.5/site-packages/numpy/doc/example.py
-  /usr/lib/python2.5/site-packages/numpy/doc/example.pyc
-  /usr/lib/python2.5/site-packages/numpy/doc/example.pyo
-  /usr/lib/python2.5/site-packages/numpy/doc/html/api-objects.txt
-  /usr/lib/python2.5/site-packages/numpy/doc/html/crarr.png
-  /usr/lib/python2.5/site-packages/numpy/doc/html/epydoc.css
-  /usr/lib/python2.5/site-packages/numpy/doc/html/epydoc.js
-  /usr/lib/python2.5/site-packages/numpy/doc/html/example-module.html
-  /usr/lib/python2.5/site-packages/numpy/doc/html/example-pysrc.html
-  /usr/lib/python2.5/site-packages/numpy/doc/html/frames.html
-  /usr/lib/python2.5/site-packages/numpy/doc/html/help.html
-  /usr/lib/python2.5/site-packages/numpy/doc/html/identifier-index.html
-  /usr/lib/python2.5/site-packages/numpy/doc/html/index.html
-  /usr/lib/python2.5/site-packages/numpy/doc/html/module-tree.html
-  /usr/lib/python2.5/site-packages/numpy/doc/html/redirect.html
-  /usr/lib/python2.5/site-packages/numpy/doc/html/toc-everything.html
-  /usr/lib/python2.5/site-packages/numpy/doc/html/toc-example-module.html
-  /usr/lib/python2.5/site-packages/numpy/doc/html/toc.html
-  /usr/lib/python2.5/site-packages/numpy/doc/pep_buffer.txt
-  /usr/lib/python2.5/site-packages/numpy/doc/pyrex/MANIFEST
-  /usr/lib/python2.5/site-packages/numpy/doc/pyrex/Makefile
-  /usr/lib/python2.5/site-packages/numpy/doc/pyrex/c_numpy.pxd
-  /usr/lib/python2.5/site-packages/numpy/doc/pyrex/c_python.pxd
-  /usr/lib/python2.5/site-packages/numpy/doc/pyrex/notes
-  /usr/lib/python2.5/site-packages/numpy/doc/pyrex/numpyx.c
-  /usr/lib/python2.5/site-packages/numpy/doc/pyrex/numpyx.pyx
-  /usr/lib/python2.5/site-packages/numpy/doc/pyrex/run_test.py
-  /usr/lib/python2.5/site-packages/numpy/doc/pyrex/run_test.pyc
-  /usr/lib/python2.5/site-packages/numpy/doc/pyrex/run_test.pyo
-  /usr/lib/python2.5/site-packages/numpy/doc/pyrex/setup.py
-  /usr/lib/python2.5/site-packages/numpy/doc/pyrex/setup.pyc
-  /usr/lib/python2.5/site-packages/numpy/doc/pyrex/setup.pyo
-  /usr/lib/python2.5/site-packages/numpy/doc/records.txt
-  /usr/lib/python2.5/site-packages/numpy/doc/swig/Makefile
-  /usr/lib/python2.5/site-packages/numpy/doc/swig/README
-  /usr/lib/python2.5/site-packages/numpy/doc/swig/doc/Makefile
-  /usr/lib/python2.5/site-packages/numpy/doc/swig/doc/numpy_swig.html
-  /usr/lib/python2.5/site-packages/numpy/doc/swig/doc/numpy_swig.pdf
-  /usr/lib/python2.5/site-packages/numpy/doc/swig/doc/numpy_swig.txt
-  /usr/lib/python2.5/site-packages/numpy/doc/swig/doc/testing.html
-  /usr/lib/python2.5/site-packages/numpy/doc/swig/doc/testing.pdf
-  /usr/lib/python2.5/site-packages/numpy/doc/swig/doc/testing.txt
-  /usr/lib/python2.5/site-packages/numpy/doc/swig/numpy.i
-  /usr/lib/python2.5/site-packages/numpy/doc/swig/test/Makefile
-  /usr/lib/python2.5/site-packages/numpy/doc/swig/test/Matrix.cxx
-  /usr/lib/python2.5/site-packages/numpy/doc/swig/test/Matrix.h
-  /usr/lib/python2.5/site-packages/numpy/doc/swig/test/Matrix.i
-  /usr/lib/python2.5/site-packages/numpy/doc/swig/test/Tensor.cxx
-  /usr/lib/python2.5/site-packages/numpy/doc/swig/test/Tensor.h
-  /usr/lib/python2.5/site-packages/numpy/doc/swig/test/Tensor.i
-  /usr/lib/python2.5/site-packages/numpy/doc/swig/test/Vector.cxx
-  /usr/lib/python2.5/site-packages/numpy/doc/swig/test/Vector.h
-  /usr/lib/python2.5/site-packages/numpy/doc/swig/test/Vector.i
-  /usr/lib/python2.5/site-packages/numpy/doc/swig/test/setup.py
-  /usr/lib/python2.5/site-packages/numpy/doc/swig/test/setup.pyc
-  /usr/lib/python2.5/site-packages/numpy/doc/swig/test/setup.pyo
-  /usr/lib/python2.5/site-packages/numpy/doc/swig/test/testMatrix.py
-  /usr/lib/python2.5/site-packages/numpy/doc/swig/test/testMatrix.pyc
-  /usr/lib/python2.5/site-packages/numpy/doc/swig/test/testMatrix.pyo
-  /usr/lib/python2.5/site-packages/numpy/doc/swig/test/testTensor.py
-  /usr/lib/python2.5/site-packages/numpy/doc/swig/test/testTensor.pyc
-  /usr/lib/python2.5/site-packages/numpy/doc/swig/test/testTensor.pyo
-  /usr/lib/python2.5/site-packages/numpy/doc/swig/test/testVector.py
-  /usr/lib/python2.5/site-packages/numpy/doc/swig/test/testVector.pyc
-  /usr/lib/python2.5/site-packages/numpy/doc/swig/test/testVector.pyo
-  /usr/lib/python2.5/site-packages/numpy/doc/ufuncs.txt
+  /usr/lib/python2.5/site-packages/numpy/doc/__init__.py
+  /usr/lib/python2.5/site-packages/numpy/doc/__init__.pyc
+  /usr/lib/python2.5/site-packages/numpy/doc/__init__.pyo
+  /usr/lib/python2.5/site-packages/numpy/doc/basics.py
+  /usr/lib/python2.5/site-packages/numpy/doc/basics.pyc
+  /usr/lib/python2.5/site-packages/numpy/doc/basics.pyo
+  /usr/lib/python2.5/site-packages/numpy/doc/broadcasting.py
+  /usr/lib/python2.5/site-packages/numpy/doc/broadcasting.pyc
+  /usr/lib/python2.5/site-packages/numpy/doc/broadcasting.pyo
+  /usr/lib/python2.5/site-packages/numpy/doc/creation.py
+  /usr/lib/python2.5/site-packages/numpy/doc/creation.pyc
+  /usr/lib/python2.5/site-packages/numpy/doc/creation.pyo
+  /usr/lib/python2.5/site-packages/numpy/doc/glossary.py
+  /usr/lib/python2.5/site-packages/numpy/doc/glossary.pyc
+  /usr/lib/python2.5/site-packages/numpy/doc/glossary.pyo
+  /usr/lib/python2.5/site-packages/numpy/doc/howtofind.py
+  /usr/lib/python2.5/site-packages/numpy/doc/howtofind.pyc
+  /usr/lib/python2.5/site-packages/numpy/doc/howtofind.pyo
+  /usr/lib/python2.5/site-packages/numpy/doc/indexing.py
+  /usr/lib/python2.5/site-packages/numpy/doc/indexing.pyc
+  /usr/lib/python2.5/site-packages/numpy/doc/indexing.pyo
+  /usr/lib/python2.5/site-packages/numpy/doc/internals.py
+  /usr/lib/python2.5/site-packages/numpy/doc/internals.pyc
+  /usr/lib/python2.5/site-packages/numpy/doc/internals.pyo
+  /usr/lib/python2.5/site-packages/numpy/doc/io.py
+  /usr/lib/python2.5/site-packages/numpy/doc/io.pyc
+  /usr/lib/python2.5/site-packages/numpy/doc/io.pyo
+  /usr/lib/python2.5/site-packages/numpy/doc/jargon.py
+  /usr/lib/python2.5/site-packages/numpy/doc/jargon.pyc
+  /usr/lib/python2.5/site-packages/numpy/doc/jargon.pyo
+  /usr/lib/python2.5/site-packages/numpy/doc/methods_vs_functions.py
+  /usr/lib/python2.5/site-packages/numpy/doc/methods_vs_functions.pyc
+  /usr/lib/python2.5/site-packages/numpy/doc/methods_vs_functions.pyo
+  /usr/lib/python2.5/site-packages/numpy/doc/misc.py
+  /usr/lib/python2.5/site-packages/numpy/doc/misc.pyc
+  /usr/lib/python2.5/site-packages/numpy/doc/misc.pyo
+  /usr/lib/python2.5/site-packages/numpy/doc/performance.py
+  /usr/lib/python2.5/site-packages/numpy/doc/performance.pyc
+  /usr/lib/python2.5/site-packages/numpy/doc/performance.pyo
+  /usr/lib/python2.5/site-packages/numpy/doc/structured_arrays.py
+  /usr/lib/python2.5/site-packages/numpy/doc/structured_arrays.pyc
+  /usr/lib/python2.5/site-packages/numpy/doc/structured_arrays.pyo
+  /usr/lib/python2.5/site-packages/numpy/doc/subclassing.py
+  /usr/lib/python2.5/site-packages/numpy/doc/subclassing.pyc
+  /usr/lib/python2.5/site-packages/numpy/doc/subclassing.pyo
+  /usr/lib/python2.5/site-packages/numpy/doc/ufuncs.py
+  /usr/lib/python2.5/site-packages/numpy/doc/ufuncs.pyc
+  /usr/lib/python2.5/site-packages/numpy/doc/ufuncs.pyo
   /usr/lib/python2.5/site-packages/numpy/dual.py
   /usr/lib/python2.5/site-packages/numpy/dual.pyc
   /usr/lib/python2.5/site-packages/numpy/dual.pyo
@@ -564,106 +570,15 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/numpy/f2py/info.py
   /usr/lib/python2.5/site-packages/numpy/f2py/info.pyc
   /usr/lib/python2.5/site-packages/numpy/f2py/info.pyo
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/__init__.py
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/__init__.pyc
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/__init__.pyo
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/api.py
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/api.pyc
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/api.pyo
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/doc.txt
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/extgen/__init__.py
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/extgen/__init__.pyc
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/extgen/__init__.pyo
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/extgen/base.py
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/extgen/base.pyc
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/extgen/base.pyo
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/extgen/c_support.py
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/extgen/c_support.pyc
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/extgen/c_support.pyo
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/extgen/py_support.py
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/extgen/py_support.pyc
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/extgen/py_support.pyo
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/extgen/setup_py.py
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/extgen/setup_py.pyc
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/extgen/setup_py.pyo
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/extgen/utils.py
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/extgen/utils.pyc
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/extgen/utils.pyo
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/main.py
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/main.pyc
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/main.pyo
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/nary.py
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/nary.pyc
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/nary.pyo
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/parser/Fortran2003.py
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/parser/Fortran2003.pyc
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/parser/Fortran2003.pyo
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/parser/__init__.py
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/parser/__init__.pyc
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/parser/__init__.pyo
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/parser/api.py
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/parser/api.pyc
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/parser/api.pyo
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/parser/base_classes.py
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/parser/base_classes.pyc
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/parser/base_classes.pyo
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/parser/block_statements.py
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/parser/block_statements.pyc
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/parser/block_statements.pyo
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/parser/doc.txt
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/parser/parsefortran.py
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/parser/parsefortran.pyc
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/parser/parsefortran.pyo
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/parser/pattern_tools.py
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/parser/pattern_tools.pyc
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/parser/pattern_tools.pyo
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/parser/readfortran.py
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/parser/readfortran.pyc
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/parser/readfortran.pyo
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/parser/sourceinfo.py
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/parser/sourceinfo.pyc
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/parser/sourceinfo.pyo
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/parser/splitline.py
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/parser/splitline.pyc
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/parser/splitline.pyo
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/parser/statements.py
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/parser/statements.pyc
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/parser/statements.pyo
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/parser/test_Fortran2003.py
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/parser/test_Fortran2003.pyc
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/parser/test_Fortran2003.pyo
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/parser/test_parser.py
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/parser/test_parser.pyc
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/parser/test_parser.pyo
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/parser/typedecl_statements.py
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/parser/typedecl_statements.pyc
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/parser/typedecl_statements.pyo
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/parser/utils.py
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/parser/utils.pyc
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/parser/utils.pyo
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/py_wrap.py
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/py_wrap.pyc
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/py_wrap.pyo
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/py_wrap_subprogram.py
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/py_wrap_subprogram.pyc
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/py_wrap_subprogram.pyo
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/py_wrap_type.py
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/py_wrap_type.pyc
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/py_wrap_type.pyo
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/setup.py
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/setup.pyc
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/setup.pyo
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/src/F_FUNC.cpp
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/src/pyobj_to_string_len.c
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/wrapper_base.py
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/wrapper_base.pyc
-  /usr/lib/python2.5/site-packages/numpy/f2py/lib/wrapper_base.pyo
   /usr/lib/python2.5/site-packages/numpy/f2py/rules.py
   /usr/lib/python2.5/site-packages/numpy/f2py/rules.pyc
   /usr/lib/python2.5/site-packages/numpy/f2py/rules.pyo
   /usr/lib/python2.5/site-packages/numpy/f2py/setup.py
   /usr/lib/python2.5/site-packages/numpy/f2py/setup.pyc
   /usr/lib/python2.5/site-packages/numpy/f2py/setup.pyo
+  /usr/lib/python2.5/site-packages/numpy/f2py/setupscons.py
+  /usr/lib/python2.5/site-packages/numpy/f2py/setupscons.pyc
+  /usr/lib/python2.5/site-packages/numpy/f2py/setupscons.pyo
   /usr/lib/python2.5/site-packages/numpy/f2py/src/fortranobject.c
   /usr/lib/python2.5/site-packages/numpy/f2py/src/fortranobject.h
   /usr/lib/python2.5/site-packages/numpy/f2py/use_rules.py
@@ -685,6 +600,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/numpy/fft/setup.py
   /usr/lib/python2.5/site-packages/numpy/fft/setup.pyc
   /usr/lib/python2.5/site-packages/numpy/fft/setup.pyo
+  /usr/lib/python2.5/site-packages/numpy/fft/setupscons.py
+  /usr/lib/python2.5/site-packages/numpy/fft/setupscons.pyc
+  /usr/lib/python2.5/site-packages/numpy/fft/setupscons.pyo
   /usr/lib/python2.5/site-packages/numpy/fft/tests/test_fftpack.py
   /usr/lib/python2.5/site-packages/numpy/fft/tests/test_fftpack.pyc
   /usr/lib/python2.5/site-packages/numpy/fft/tests/test_fftpack.pyo
@@ -695,12 +613,24 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/numpy/lib/__init__.pyc
   /usr/lib/python2.5/site-packages/numpy/lib/__init__.pyo
   /usr/lib/python2.5/site-packages/numpy/lib/_compiled_base.dll
+  /usr/lib/python2.5/site-packages/numpy/lib/_datasource.py
+  /usr/lib/python2.5/site-packages/numpy/lib/_datasource.pyc
+  /usr/lib/python2.5/site-packages/numpy/lib/_datasource.pyo
   /usr/lib/python2.5/site-packages/numpy/lib/arraysetops.py
   /usr/lib/python2.5/site-packages/numpy/lib/arraysetops.pyc
   /usr/lib/python2.5/site-packages/numpy/lib/arraysetops.pyo
-  /usr/lib/python2.5/site-packages/numpy/lib/convdtype.py
-  /usr/lib/python2.5/site-packages/numpy/lib/convdtype.pyc
-  /usr/lib/python2.5/site-packages/numpy/lib/convdtype.pyo
+  /usr/lib/python2.5/site-packages/numpy/lib/arrayterator.py
+  /usr/lib/python2.5/site-packages/numpy/lib/arrayterator.pyc
+  /usr/lib/python2.5/site-packages/numpy/lib/arrayterator.pyo
+  /usr/lib/python2.5/site-packages/numpy/lib/benchmarks/bench_arraysetops.py
+  /usr/lib/python2.5/site-packages/numpy/lib/benchmarks/bench_arraysetops.pyc
+  /usr/lib/python2.5/site-packages/numpy/lib/benchmarks/bench_arraysetops.pyo
+  /usr/lib/python2.5/site-packages/numpy/lib/financial.py
+  /usr/lib/python2.5/site-packages/numpy/lib/financial.pyc
+  /usr/lib/python2.5/site-packages/numpy/lib/financial.pyo
+  /usr/lib/python2.5/site-packages/numpy/lib/format.py
+  /usr/lib/python2.5/site-packages/numpy/lib/format.pyc
+  /usr/lib/python2.5/site-packages/numpy/lib/format.pyo
   /usr/lib/python2.5/site-packages/numpy/lib/function_base.py
   /usr/lib/python2.5/site-packages/numpy/lib/function_base.pyc
   /usr/lib/python2.5/site-packages/numpy/lib/function_base.pyo
@@ -713,6 +643,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/numpy/lib/info.py
   /usr/lib/python2.5/site-packages/numpy/lib/info.pyc
   /usr/lib/python2.5/site-packages/numpy/lib/info.pyo
+  /usr/lib/python2.5/site-packages/numpy/lib/io.py
+  /usr/lib/python2.5/site-packages/numpy/lib/io.pyc
+  /usr/lib/python2.5/site-packages/numpy/lib/io.pyo
   /usr/lib/python2.5/site-packages/numpy/lib/machar.py
   /usr/lib/python2.5/site-packages/numpy/lib/machar.pyc
   /usr/lib/python2.5/site-packages/numpy/lib/machar.pyo
@@ -725,12 +658,30 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/numpy/lib/setup.py
   /usr/lib/python2.5/site-packages/numpy/lib/setup.pyc
   /usr/lib/python2.5/site-packages/numpy/lib/setup.pyo
+  /usr/lib/python2.5/site-packages/numpy/lib/setupscons.py
+  /usr/lib/python2.5/site-packages/numpy/lib/setupscons.pyc
+  /usr/lib/python2.5/site-packages/numpy/lib/setupscons.pyo
   /usr/lib/python2.5/site-packages/numpy/lib/shape_base.py
   /usr/lib/python2.5/site-packages/numpy/lib/shape_base.pyc
   /usr/lib/python2.5/site-packages/numpy/lib/shape_base.pyo
+  /usr/lib/python2.5/site-packages/numpy/lib/stride_tricks.py
+  /usr/lib/python2.5/site-packages/numpy/lib/stride_tricks.pyc
+  /usr/lib/python2.5/site-packages/numpy/lib/stride_tricks.pyo
+  /usr/lib/python2.5/site-packages/numpy/lib/tests/test__datasource.py
+  /usr/lib/python2.5/site-packages/numpy/lib/tests/test__datasource.pyc
+  /usr/lib/python2.5/site-packages/numpy/lib/tests/test__datasource.pyo
   /usr/lib/python2.5/site-packages/numpy/lib/tests/test_arraysetops.py
   /usr/lib/python2.5/site-packages/numpy/lib/tests/test_arraysetops.pyc
   /usr/lib/python2.5/site-packages/numpy/lib/tests/test_arraysetops.pyo
+  /usr/lib/python2.5/site-packages/numpy/lib/tests/test_arrayterator.py
+  /usr/lib/python2.5/site-packages/numpy/lib/tests/test_arrayterator.pyc
+  /usr/lib/python2.5/site-packages/numpy/lib/tests/test_arrayterator.pyo
+  /usr/lib/python2.5/site-packages/numpy/lib/tests/test_financial.py
+  /usr/lib/python2.5/site-packages/numpy/lib/tests/test_financial.pyc
+  /usr/lib/python2.5/site-packages/numpy/lib/tests/test_financial.pyo
+  /usr/lib/python2.5/site-packages/numpy/lib/tests/test_format.py
+  /usr/lib/python2.5/site-packages/numpy/lib/tests/test_format.pyc
+  /usr/lib/python2.5/site-packages/numpy/lib/tests/test_format.pyo
   /usr/lib/python2.5/site-packages/numpy/lib/tests/test_function_base.py
   /usr/lib/python2.5/site-packages/numpy/lib/tests/test_function_base.pyc
   /usr/lib/python2.5/site-packages/numpy/lib/tests/test_function_base.pyo
@@ -740,12 +691,24 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/numpy/lib/tests/test_index_tricks.py
   /usr/lib/python2.5/site-packages/numpy/lib/tests/test_index_tricks.pyc
   /usr/lib/python2.5/site-packages/numpy/lib/tests/test_index_tricks.pyo
+  /usr/lib/python2.5/site-packages/numpy/lib/tests/test_io.py
+  /usr/lib/python2.5/site-packages/numpy/lib/tests/test_io.pyc
+  /usr/lib/python2.5/site-packages/numpy/lib/tests/test_io.pyo
+  /usr/lib/python2.5/site-packages/numpy/lib/tests/test_machar.py
+  /usr/lib/python2.5/site-packages/numpy/lib/tests/test_machar.pyc
+  /usr/lib/python2.5/site-packages/numpy/lib/tests/test_machar.pyo
   /usr/lib/python2.5/site-packages/numpy/lib/tests/test_polynomial.py
   /usr/lib/python2.5/site-packages/numpy/lib/tests/test_polynomial.pyc
   /usr/lib/python2.5/site-packages/numpy/lib/tests/test_polynomial.pyo
+  /usr/lib/python2.5/site-packages/numpy/lib/tests/test_regression.py
+  /usr/lib/python2.5/site-packages/numpy/lib/tests/test_regression.pyc
+  /usr/lib/python2.5/site-packages/numpy/lib/tests/test_regression.pyo
   /usr/lib/python2.5/site-packages/numpy/lib/tests/test_shape_base.py
   /usr/lib/python2.5/site-packages/numpy/lib/tests/test_shape_base.pyc
   /usr/lib/python2.5/site-packages/numpy/lib/tests/test_shape_base.pyo
+  /usr/lib/python2.5/site-packages/numpy/lib/tests/test_stride_tricks.py
+  /usr/lib/python2.5/site-packages/numpy/lib/tests/test_stride_tricks.pyc
+  /usr/lib/python2.5/site-packages/numpy/lib/tests/test_stride_tricks.pyo
   /usr/lib/python2.5/site-packages/numpy/lib/tests/test_twodim_base.py
   /usr/lib/python2.5/site-packages/numpy/lib/tests/test_twodim_base.pyc
   /usr/lib/python2.5/site-packages/numpy/lib/tests/test_twodim_base.pyo
@@ -783,9 +746,60 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/numpy/linalg/setup.py
   /usr/lib/python2.5/site-packages/numpy/linalg/setup.pyc
   /usr/lib/python2.5/site-packages/numpy/linalg/setup.pyo
+  /usr/lib/python2.5/site-packages/numpy/linalg/setupscons.py
+  /usr/lib/python2.5/site-packages/numpy/linalg/setupscons.pyc
+  /usr/lib/python2.5/site-packages/numpy/linalg/setupscons.pyo
   /usr/lib/python2.5/site-packages/numpy/linalg/tests/test_linalg.py
   /usr/lib/python2.5/site-packages/numpy/linalg/tests/test_linalg.pyc
   /usr/lib/python2.5/site-packages/numpy/linalg/tests/test_linalg.pyo
+  /usr/lib/python2.5/site-packages/numpy/linalg/tests/test_regression.py
+  /usr/lib/python2.5/site-packages/numpy/linalg/tests/test_regression.pyc
+  /usr/lib/python2.5/site-packages/numpy/linalg/tests/test_regression.pyo
+  /usr/lib/python2.5/site-packages/numpy/ma/__init__.py
+  /usr/lib/python2.5/site-packages/numpy/ma/__init__.pyc
+  /usr/lib/python2.5/site-packages/numpy/ma/__init__.pyo
+  /usr/lib/python2.5/site-packages/numpy/ma/bench.py
+  /usr/lib/python2.5/site-packages/numpy/ma/bench.pyc
+  /usr/lib/python2.5/site-packages/numpy/ma/bench.pyo
+  /usr/lib/python2.5/site-packages/numpy/ma/core.py
+  /usr/lib/python2.5/site-packages/numpy/ma/core.pyc
+  /usr/lib/python2.5/site-packages/numpy/ma/core.pyo
+  /usr/lib/python2.5/site-packages/numpy/ma/extras.py
+  /usr/lib/python2.5/site-packages/numpy/ma/extras.pyc
+  /usr/lib/python2.5/site-packages/numpy/ma/extras.pyo
+  /usr/lib/python2.5/site-packages/numpy/ma/mrecords.py
+  /usr/lib/python2.5/site-packages/numpy/ma/mrecords.pyc
+  /usr/lib/python2.5/site-packages/numpy/ma/mrecords.pyo
+  /usr/lib/python2.5/site-packages/numpy/ma/setup.py
+  /usr/lib/python2.5/site-packages/numpy/ma/setup.pyc
+  /usr/lib/python2.5/site-packages/numpy/ma/setup.pyo
+  /usr/lib/python2.5/site-packages/numpy/ma/setupscons.py
+  /usr/lib/python2.5/site-packages/numpy/ma/setupscons.pyc
+  /usr/lib/python2.5/site-packages/numpy/ma/setupscons.pyo
+  /usr/lib/python2.5/site-packages/numpy/ma/tests/test_core.py
+  /usr/lib/python2.5/site-packages/numpy/ma/tests/test_core.pyc
+  /usr/lib/python2.5/site-packages/numpy/ma/tests/test_core.pyo
+  /usr/lib/python2.5/site-packages/numpy/ma/tests/test_extras.py
+  /usr/lib/python2.5/site-packages/numpy/ma/tests/test_extras.pyc
+  /usr/lib/python2.5/site-packages/numpy/ma/tests/test_extras.pyo
+  /usr/lib/python2.5/site-packages/numpy/ma/tests/test_mrecords.py
+  /usr/lib/python2.5/site-packages/numpy/ma/tests/test_mrecords.pyc
+  /usr/lib/python2.5/site-packages/numpy/ma/tests/test_mrecords.pyo
+  /usr/lib/python2.5/site-packages/numpy/ma/tests/test_old_ma.py
+  /usr/lib/python2.5/site-packages/numpy/ma/tests/test_old_ma.pyc
+  /usr/lib/python2.5/site-packages/numpy/ma/tests/test_old_ma.pyo
+  /usr/lib/python2.5/site-packages/numpy/ma/tests/test_subclassing.py
+  /usr/lib/python2.5/site-packages/numpy/ma/tests/test_subclassing.pyc
+  /usr/lib/python2.5/site-packages/numpy/ma/tests/test_subclassing.pyo
+  /usr/lib/python2.5/site-packages/numpy/ma/testutils.py
+  /usr/lib/python2.5/site-packages/numpy/ma/testutils.pyc
+  /usr/lib/python2.5/site-packages/numpy/ma/testutils.pyo
+  /usr/lib/python2.5/site-packages/numpy/ma/timer_comparison.py
+  /usr/lib/python2.5/site-packages/numpy/ma/timer_comparison.pyc
+  /usr/lib/python2.5/site-packages/numpy/ma/timer_comparison.pyo
+  /usr/lib/python2.5/site-packages/numpy/ma/version.py
+  /usr/lib/python2.5/site-packages/numpy/ma/version.pyc
+  /usr/lib/python2.5/site-packages/numpy/ma/version.pyo
   /usr/lib/python2.5/site-packages/numpy/matlib.py
   /usr/lib/python2.5/site-packages/numpy/matlib.pyc
   /usr/lib/python2.5/site-packages/numpy/matlib.pyo
@@ -847,6 +861,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/numpy/numarray/setup.py
   /usr/lib/python2.5/site-packages/numpy/numarray/setup.pyc
   /usr/lib/python2.5/site-packages/numpy/numarray/setup.pyo
+  /usr/lib/python2.5/site-packages/numpy/numarray/setupscons.py
+  /usr/lib/python2.5/site-packages/numpy/numarray/setupscons.pyc
+  /usr/lib/python2.5/site-packages/numpy/numarray/setupscons.pyo
   /usr/lib/python2.5/site-packages/numpy/numarray/ufuncs.py
   /usr/lib/python2.5/site-packages/numpy/numarray/ufuncs.pyc
   /usr/lib/python2.5/site-packages/numpy/numarray/ufuncs.pyo
@@ -910,6 +927,12 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/numpy/oldnumeric/setup.py
   /usr/lib/python2.5/site-packages/numpy/oldnumeric/setup.pyc
   /usr/lib/python2.5/site-packages/numpy/oldnumeric/setup.pyo
+  /usr/lib/python2.5/site-packages/numpy/oldnumeric/setupscons.py
+  /usr/lib/python2.5/site-packages/numpy/oldnumeric/setupscons.pyc
+  /usr/lib/python2.5/site-packages/numpy/oldnumeric/setupscons.pyo
+  /usr/lib/python2.5/site-packages/numpy/oldnumeric/tests/test_oldnumeric.py
+  /usr/lib/python2.5/site-packages/numpy/oldnumeric/tests/test_oldnumeric.pyc
+  /usr/lib/python2.5/site-packages/numpy/oldnumeric/tests/test_oldnumeric.pyo
   /usr/lib/python2.5/site-packages/numpy/oldnumeric/typeconv.py
   /usr/lib/python2.5/site-packages/numpy/oldnumeric/typeconv.pyc
   /usr/lib/python2.5/site-packages/numpy/oldnumeric/typeconv.pyo
@@ -930,19 +953,34 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/numpy/random/setup.py
   /usr/lib/python2.5/site-packages/numpy/random/setup.pyc
   /usr/lib/python2.5/site-packages/numpy/random/setup.pyo
+  /usr/lib/python2.5/site-packages/numpy/random/setupscons.py
+  /usr/lib/python2.5/site-packages/numpy/random/setupscons.pyc
+  /usr/lib/python2.5/site-packages/numpy/random/setupscons.pyo
   /usr/lib/python2.5/site-packages/numpy/random/tests/test_random.py
   /usr/lib/python2.5/site-packages/numpy/random/tests/test_random.pyc
   /usr/lib/python2.5/site-packages/numpy/random/tests/test_random.pyo
   /usr/lib/python2.5/site-packages/numpy/setup.py
   /usr/lib/python2.5/site-packages/numpy/setup.pyc
   /usr/lib/python2.5/site-packages/numpy/setup.pyo
+  /usr/lib/python2.5/site-packages/numpy/setupscons.py
+  /usr/lib/python2.5/site-packages/numpy/setupscons.pyc
+  /usr/lib/python2.5/site-packages/numpy/setupscons.pyo
   /usr/lib/python2.5/site-packages/numpy/site.cfg.example
   /usr/lib/python2.5/site-packages/numpy/testing/__init__.py
   /usr/lib/python2.5/site-packages/numpy/testing/__init__.pyc
   /usr/lib/python2.5/site-packages/numpy/testing/__init__.pyo
-  /usr/lib/python2.5/site-packages/numpy/testing/info.py
-  /usr/lib/python2.5/site-packages/numpy/testing/info.pyc
-  /usr/lib/python2.5/site-packages/numpy/testing/info.pyo
+  /usr/lib/python2.5/site-packages/numpy/testing/decorators.py
+  /usr/lib/python2.5/site-packages/numpy/testing/decorators.pyc
+  /usr/lib/python2.5/site-packages/numpy/testing/decorators.pyo
+  /usr/lib/python2.5/site-packages/numpy/testing/noseclasses.py
+  /usr/lib/python2.5/site-packages/numpy/testing/noseclasses.pyc
+  /usr/lib/python2.5/site-packages/numpy/testing/noseclasses.pyo
+  /usr/lib/python2.5/site-packages/numpy/testing/nosetester.py
+  /usr/lib/python2.5/site-packages/numpy/testing/nosetester.pyc
+  /usr/lib/python2.5/site-packages/numpy/testing/nosetester.pyo
+  /usr/lib/python2.5/site-packages/numpy/testing/nulltester.py
+  /usr/lib/python2.5/site-packages/numpy/testing/nulltester.pyc
+  /usr/lib/python2.5/site-packages/numpy/testing/nulltester.pyo
   /usr/lib/python2.5/site-packages/numpy/testing/numpytest.py
   /usr/lib/python2.5/site-packages/numpy/testing/numpytest.pyc
   /usr/lib/python2.5/site-packages/numpy/testing/numpytest.pyo
@@ -952,6 +990,12 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/numpy/testing/setup.py
   /usr/lib/python2.5/site-packages/numpy/testing/setup.pyc
   /usr/lib/python2.5/site-packages/numpy/testing/setup.pyo
+  /usr/lib/python2.5/site-packages/numpy/testing/setupscons.py
+  /usr/lib/python2.5/site-packages/numpy/testing/setupscons.pyc
+  /usr/lib/python2.5/site-packages/numpy/testing/setupscons.pyo
+  /usr/lib/python2.5/site-packages/numpy/testing/tests/test_utils.py
+  /usr/lib/python2.5/site-packages/numpy/testing/tests/test_utils.pyc
+  /usr/lib/python2.5/site-packages/numpy/testing/tests/test_utils.pyo
   /usr/lib/python2.5/site-packages/numpy/testing/utils.py
   /usr/lib/python2.5/site-packages/numpy/testing/utils.pyc
   /usr/lib/python2.5/site-packages/numpy/testing/utils.pyo
@@ -961,13 +1005,17 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/numpy/version.py
   /usr/lib/python2.5/site-packages/numpy/version.pyc
   /usr/lib/python2.5/site-packages/numpy/version.pyo
-  /usr/share/doc/python-numpy-1.0.4/LICENSE.txt
-  /usr/share/doc/python-numpy-1.0.4/README.txt
-  /usr/share/doc/python-numpy-1.0.4/THANKS.txt
+  /usr/share/doc/python-numpy-1.2.0/INSTALL.txt
+  /usr/share/doc/python-numpy-1.2.0/LICENSE.txt
+  /usr/share/doc/python-numpy-1.2.0/README.txt
+  /usr/share/doc/python-numpy-1.2.0/THANKS.txt
 
 ------------------
 
 Port Notes:
+
+----- version 1.2.0-1 -----
+Version bump.
 
 ----- version 1.0.4-1 -----
 Version bump.
