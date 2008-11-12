@@ -7,3 +7,6 @@ PATCH_URI="
 	1.0.4-fenv.patch
 	1.0.4-g77.patch
 "
+
+# interferes with get_flags_linker_so in numpy.distutils.fcompiler
+unset LDFLAGS

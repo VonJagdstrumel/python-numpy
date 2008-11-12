@@ -21,7 +21,7 @@ Runtime requirements:
 Build requirements:
 (besides corresponding -devel packages)
   binutils-20080624-2
-  cygport-0.4.0-1
+  cygport-0.4.2-1
   gcc-core-3.4.4-3
   gcc-g77-3.4.4-3
   python-2.5.2-3
@@ -35,22 +35,22 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack python-numpy-1.2.0-X-src.tar.bz2
+  unpack python-numpy-1.2.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./python-numpy-1.2.0-X.cygport all
+  cygport ./python-numpy-1.2.1-X.cygport all
 
 This will create:
-  /usr/src/python-numpy-1.2.0-X-src.tar.bz2
-  /usr/src/python-numpy-1.2.0-X.tar.bz2
+  /usr/src/python-numpy-1.2.1-X-src.tar.bz2
+  /usr/src/python-numpy-1.2.1-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
   /usr/bin/f2py
-  /usr/lib/python2.5/site-packages/numpy-1.2.0-py2.5.egg-info
+  /usr/lib/python2.5/site-packages/numpy-1.2.1-py2.5.egg-info
   /usr/lib/python2.5/site-packages/numpy/COMPATIBILITY
   /usr/lib/python2.5/site-packages/numpy/DEV_README.txt
   /usr/lib/python2.5/site-packages/numpy/INSTALL.txt
@@ -1005,14 +1005,17 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/numpy/version.py
   /usr/lib/python2.5/site-packages/numpy/version.pyc
   /usr/lib/python2.5/site-packages/numpy/version.pyo
-  /usr/share/doc/python-numpy-1.2.0/INSTALL.txt
-  /usr/share/doc/python-numpy-1.2.0/LICENSE.txt
-  /usr/share/doc/python-numpy-1.2.0/README.txt
-  /usr/share/doc/python-numpy-1.2.0/THANKS.txt
+  /usr/share/doc/python-numpy-1.2.1/INSTALL.txt
+  /usr/share/doc/python-numpy-1.2.1/LICENSE.txt
+  /usr/share/doc/python-numpy-1.2.1/README.txt
+  /usr/share/doc/python-numpy-1.2.1/THANKS.txt
 
 ------------------
 
 Port Notes:
+
+----- version 1.2.1-1 -----
+Version bump.
 
 ----- version 1.2.0-1 -----
 Version bump.
