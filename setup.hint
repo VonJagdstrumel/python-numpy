@@ -1,5 +1,5 @@
 category: Python
-requires: cygwin lapack python
+requires: cygwin lapack libgcc1 python
 sdesc: "Python scientific computing module"
 ldesc: "The fundamental package needed for scientific computing with
 Python is called NumPy.  This package contains a powerful N-dimensional

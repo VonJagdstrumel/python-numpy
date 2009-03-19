@@ -9,3 +9,18 @@
          'compiler_f90' : None, # Use --fcompiler=gnu95 for f90 codes
          'compiler_fix' : None,
          'linker_so'    : [None, "-g", "-Wall"],
+@@ -298,11 +298,9 @@ class Gnu95FCompiler(GnuFCompiler):
+     possible_executables = ['gfortran', 'f95']
+     executables = {
+         'version_cmd'  : ["<F90>", "--version"],
+-        'compiler_f77' : [None, "-Wall", "-ffixed-form",
+-                          "-fno-second-underscore"],
+-        'compiler_f90' : [None, "-Wall", "-fno-second-underscore"],
+-        'compiler_fix' : [None, "-Wall", "-ffixed-form",
+-                          "-fno-second-underscore"],
++        'compiler_f77' : [None, "-Wall", "-ffixed-form"],
++        'compiler_f90' : [None, "-Wall"],
++        'compiler_fix' : [None, "-Wall", "-ffixed-form"],
+         'linker_so'    : ["<F90>", "-Wall"],
+         'archiver'     : ["ar", "-cr"],
+         'ranlib'       : ["ranlib"],

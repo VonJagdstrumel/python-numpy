@@ -3,9 +3,9 @@ inherit distutils
 DESCRIPTION="Numeric Python module"
 HOMEPAGE="http://numeric.scipy.org/"
 SRC_URI="mirror://sourceforge/${ORIG_PN}/${ORIG_PN}-${PV}.tar.gz"
-PATCH_URI="
-	1.0.4-fenv.patch
-	1.0.4-g77.patch
+PATCH_URI="1.0.4-fenv.patch
+           1.0.4-g77.patch
+           1.2.1-fenv-fnstsw.patch
 "
 
 # interferes with get_flags_linker_so in numpy.distutils.fcompiler
