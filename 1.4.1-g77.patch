@@ -1,6 +1,6 @@
---- origsrc/numpy-1.0.4/numpy/distutils/fcompiler/gnu.py	2007-11-07 16:05:14.000000000 -0600
-+++ src/numpy-1.0.4/numpy/distutils/fcompiler/gnu.py	2007-11-29 22:28:10.545000000 -0600
-@@ -51,7 +51,7 @@
+--- origsrc/numpy-1.4.1/numpy/distutils/fcompiler/gnu.py	2010-04-22 04:35:24.000000000 -0500
++++ src/numpy-1.4.1/numpy/distutils/fcompiler/gnu.py	2010-05-12 04:17:14.170440300 -0500
+@@ -66,7 +66,7 @@ class GnuFCompiler(FCompiler):
      possible_executables = ['g77', 'f77']
      executables = {
          'version_cmd'  : [None, "--version"],
@@ -9,18 +9,18 @@
          'compiler_f90' : None, # Use --fcompiler=gnu95 for f90 codes
          'compiler_fix' : None,
          'linker_so'    : [None, "-g", "-Wall"],
-@@ -298,11 +298,9 @@ class Gnu95FCompiler(GnuFCompiler):
+@@ -225,11 +225,9 @@ class Gnu95FCompiler(GnuFCompiler):
      possible_executables = ['gfortran', 'f95']
      executables = {
          'version_cmd'  : ["<F90>", "--version"],
 -        'compiler_f77' : [None, "-Wall", "-ffixed-form",
--                          "-fno-second-underscore"],
--        'compiler_f90' : [None, "-Wall", "-fno-second-underscore"],
+-		"-fno-second-underscore"] + _EXTRAFLAGS,
+-        'compiler_f90' : [None, "-Wall", "-fno-second-underscore"] + _EXTRAFLAGS,
 -        'compiler_fix' : [None, "-Wall", "-ffixed-form",
--                          "-fno-second-underscore"],
-+        'compiler_f77' : [None, "-Wall", "-ffixed-form"],
-+        'compiler_f90' : [None, "-Wall"],
-+        'compiler_fix' : [None, "-Wall", "-ffixed-form"],
+-                          "-fno-second-underscore"] + _EXTRAFLAGS,
++        'compiler_f77' : [None, "-Wall", "-ffixed-form"] + _EXTRAFLAGS,
++        'compiler_f90' : [None, "-Wall"] + _EXTRAFLAGS,
++        'compiler_fix' : [None, "-Wall", "-ffixed-form"] + _EXTRAFLAGS,
          'linker_so'    : ["<F90>", "-Wall"],
          'archiver'     : ["ar", "-cr"],
          'ranlib'       : ["ranlib"],
