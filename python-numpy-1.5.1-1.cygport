@@ -1,4 +1,4 @@
-inherit distutils
+inherit distutils-multi
 
 DESCRIPTION="Numeric Python module"
 HOMEPAGE="http://numeric.scipy.org/"
@@ -6,6 +6,11 @@ SRC_URI="mirror://sourceforge/${ORIG_PN}/${ORIG_PN}-${PV}.tar.gz"
 PATCH_URI="1.0.4-fenv.patch
            1.4.1-g77.patch
 "
+
+PKG_NAMES="${PN} python3-numpy"
+PKG_HINTS="setup py3k"
+python_numpy_CONTENTS="usr/bin/f2py "${PYTHON_SITELIB#/}" usr/share/doc/"
+python3_numpy_CONTENTS="usr/bin/f2py3 "${PYTHON3_SITELIB#/}
 
 # interferes with get_flags_linker_so in numpy.distutils.fcompiler
 unset LDFLAGS
