@@ -1,8 +1,8 @@
 inherit python-distutils
 
 NAME="python-numpy"
-VERSION=1.6.2
-RELEASE=2
+VERSION=1.7.2
+RELEASE=1
 CATEGORY="Python"
 SUMMARY="Python scientific computing module"
 DESCRIPTION="The fundamental package needed for scientific computing with
