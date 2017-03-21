@@ -1,7 +1,7 @@
-inherit python-distutils
+inherit python-wheel
 
 NAME="python-numpy"
-VERSION=1.9.2
+VERSION=1.11.2
 RELEASE=1
 CATEGORY="Python"
 SUMMARY="Python scientific computing module"
@@ -13,9 +13,9 @@ transform, and random number capabilities."
 HOMEPAGE="http://www.numpy.org/"
 SRC_URI="mirror://sourceforge/numpy/numpy-${VERSION}.tar.gz"
 SRC_DIR="numpy-${VERSION}"
-PATCH_URI="1.0.4-fenv.patch
-           1.9.2-g77.patch
-"
 
 # interferes with get_flags_linker_so in numpy.distutils.fcompiler
 unset LDFLAGS
+
+python2_numpy_CONTENTS="usr/bin/f2py2 ${python2_numpy_CONTENTS}"
+python3_numpy_CONTENTS="usr/bin/f2py3 ${python3_numpy_CONTENTS}"
