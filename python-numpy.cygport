@@ -19,3 +19,4 @@ unset LDFLAGS
 
 python2_numpy_CONTENTS="usr/bin/f2py2 ${python2_numpy_CONTENTS}"
 python3_numpy_CONTENTS="usr/bin/f2py3 ${python3_numpy_CONTENTS}"
+python_numpy_debuginfo_OBSOLETES="python3-numpy-debuginfo"
