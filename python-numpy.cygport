@@ -1,7 +1,7 @@
 inherit python-wheel
 
 NAME="python-numpy"
-VERSION=1.11.2
+VERSION=1.16.2
 RELEASE=1
 CATEGORY="Python"
 SUMMARY="Python scientific computing module"
@@ -11,12 +11,14 @@ array object, sophisticated (broadcasting) functions, tools for
 integrating C/C++ and Fortran code, and useful linear algebra, Fourier
 transform, and random number capabilities."
 HOMEPAGE="http://www.numpy.org/"
-SRC_URI="mirror://sourceforge/numpy/numpy-${VERSION}.tar.gz"
+SRC_URI="https://github.com/numpy/numpy/releases/download/v${VERSION}/numpy-${VERSION}.tar.gz"
 SRC_DIR="numpy-${VERSION}"
 
 # interferes with get_flags_linker_so in numpy.distutils.fcompiler
 unset LDFLAGS
 
-python2_numpy_CONTENTS="usr/bin/f2py2 ${python2_numpy_CONTENTS}"
-python3_numpy_CONTENTS="usr/bin/f2py3 ${python3_numpy_CONTENTS}"
+python27_numpy_CONTENTS+=" usr/bin/f2py2.7 usr/bin/f2py2"
+python36_numpy_CONTENTS+=" usr/bin/f2py3.6"
+python37_numpy_CONTENTS+=" usr/bin/f2py3.7 usr/bin/f2py3"
 python_numpy_debuginfo_OBSOLETES="python3-numpy-debuginfo"
+PKG_IGNORE="usr/bin/f2py"
