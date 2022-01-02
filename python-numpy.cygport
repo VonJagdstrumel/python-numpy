@@ -1,7 +1,7 @@
 inherit python-wheel
 
 NAME="python-numpy"
-VERSION=1.20.1
+VERSION=1.22.0
 RELEASE=1
 CATEGORY="Python"
 SUMMARY="Python scientific computing module"
@@ -17,6 +17,6 @@ SRC_DIR="numpy-${VERSION}"
 # interferes with get_flags_linker_so in numpy.distutils.fcompiler
 unset LDFLAGS
 
-python39_numpy_CONTENTS+=" usr/bin/f2py3.9 usr/bin/f2py3"
+python311_numpy_CONTENTS+=" usr/bin/f2py3.11 usr/bin/f2py3"
 python_numpy_debuginfo_OBSOLETES="python3-numpy-debuginfo"
 PKG_IGNORE="usr/bin/f2py"
